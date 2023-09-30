@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Password is required"],
     },
-    isVerfied: {
+    isVerified: {
       type: Boolean,
       default: false,
     },
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema(
     forgotPasswordToken: String,
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,
-    verifiyTokenExpiry: Date,
+    verifyTokenExpiry: Date,
   },
   { timestamps: true }
 );
